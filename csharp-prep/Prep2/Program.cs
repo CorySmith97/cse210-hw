@@ -9,25 +9,39 @@ class Program
         int grade;
         grade = Convert.ToInt32(strGrade);
 
+        string gradeLetter = "";
+
         if (grade >= 90)
         {
-            Console.WriteLine("Your grade was an A");
+            gradeLetter = "A";
         }
         else if (grade >= 80)
         {
-            Console.WriteLine("Your grade was a B");
+            gradeLetter = "B";
         }
         else if (grade >= 70)
         {
-            Console.WriteLine("Your grade was a C");
+            gradeLetter = "C";
         }
         else if (grade >= 60)
         {
-            Console.WriteLine("Your grade was a D");
+            gradeLetter = "D";
         }
-        else if (grade <= 59)
+        else
         {
-            Console.WriteLine("Your grade was a F");
+            gradeLetter = "F";
+        }
+
+        Console.Write($"Your Letter Grade was {gradeLetter}");
+        
+
+        if (gradeLetter == "A" || gradeLetter == "B" || gradeLetter == "C")
+        {
+            Console.WriteLine("Congratulations! You Pass!");
+        }
+        else
+        {
+            Console.WriteLine("Sorry, You Failed");
         }
     }
 }
