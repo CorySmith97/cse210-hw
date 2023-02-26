@@ -1,8 +1,5 @@
 public class csDisplay {
 
-    protected int _csCurrentTime;
-    protected int _csChoice;
-
     protected void csGetCurrentTime(){
         DateTime _csCurrentTime = DateTime.Now;
     }
