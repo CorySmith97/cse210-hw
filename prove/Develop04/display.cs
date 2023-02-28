@@ -1,8 +1,5 @@
 public class csDisplay {
 
-    protected void csGetCurrentTime(){
-        DateTime _csCurrentTime = DateTime.Now;
-    }
     protected int csGetSessionTime(){
         csSkipLines();
         Console.WriteLine("How long, in seconds, would you like your session to be? ");
